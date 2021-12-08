@@ -41,7 +41,9 @@
         },
         methods: {
             handleSubmitForm() {
-                let apiURL = 'http://localhost:3000/api/create-student';
+                //let apiURL = 'http://localhost:3000/api/create-student';
+
+                let apiURL = 'http://secure-earth-58163.herokuapp.com/api/create-student';
                 
                 axios.post(apiURL, this.student).then(() => {
                   this.$router.push('/view')

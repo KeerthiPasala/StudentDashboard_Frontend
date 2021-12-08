@@ -37,7 +37,7 @@
             }
         },
         created() {
-            let apiURL = 'http://localhost:3000/api';
+            let apiURL = 'http://secure-earth-58163.herokuapp.com/api';
             axios.get(apiURL).then(res => {
                 this.Students = res.data;
             }).catch(error => {
@@ -46,7 +46,7 @@
         },
         methods: {
             deleteStudent(id){
-                let apiURL = `http://localhost:3000/api/delete-student/${id}`;
+                let apiURL = `http://secure-earth-58163.herokuapp.com/api/delete-student/${id}`;
                 let indexOfArrayItem = this.Students.findIndex(i => i._id === id);
 
                 if (window.confirm("Do you really want to delete?")) {
