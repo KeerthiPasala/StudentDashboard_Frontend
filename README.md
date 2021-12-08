@@ -1,2 +1,2 @@
-# StudentDashboard_Frontend
-Front end application build using vue
+# StudentDashboard_VUE_APP
+This is a final project for web development database
