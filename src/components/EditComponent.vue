@@ -45,7 +45,7 @@ export default {
     methods: {
         handleUpdateForm() {
             let apiURL = `http://secure-earth-58163.herokuapp.com/api/update-student/${this.$route.params.id}`;
-
+            
             axios.post(apiURL, this.student).then((res) => {
                 console.log(res)
                 this.$router.push('/view')
